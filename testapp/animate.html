@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .circle {
+        background-color: #0099ff;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+      }
+      body {
+        background-color: #fff;
+        padding: 50px;
+      }
+      @keyframes slide {
+        0% {
+          transform: translate3d(0px, 0px, 0px);
+        }
+        20% {
+          transform: translate3d(300px, 400px, 0px);
+        }
+        40% {
+          transform: translate3d(600px, 0px, 0px);
+        }
+        60% {
+          transform: translate3d(900px, 400px, 0px);
+        }
+        100% {
+          transform: translate3d(1200px, 0px, 0px);
+        }
+      }
+      #myCircle {
+        animation: slide 1s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myCircle" class="circle"></div>
+  </body>
+</html>
